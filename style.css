@@ -9,7 +9,14 @@ function sendEmail() {
 
 emailjs
     .send("service_7co99li", "template_ygm4zrm", templateParams)
-    .then(()=>alert("Email sent").catch(()=>alert("Email not send")));
+    .then(() => {
+        alert("Email sent");
+    })
+    .catch(() => {
+        alert("Email not sent");
+    });
+
 
 
 }
+
